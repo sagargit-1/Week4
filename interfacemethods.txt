@@ -1,0 +1,138 @@
+31st July, 2024
+---------------------
+Setting up Maven - Ready
+Navigating a Project Structure - Ready
+The POM File - Ready
+Building, Testing, and Packaging a Project - Ready
+Overview of Dependency Management and Repository - Ready
+Maven Lifecycles and Phases - Ready
+Configuring and Using Plugins - Ready - <plug in tag>
+Developing a Basic Plugin - Ready (explain about MOJO - slide 13)
+Built in Archetypes - Ready
+
+----------------------
+•	Validate: The Maven Ensures the project is valid and all required information 
+                    is available.
+•	Compile: Maven Build tool Compiles the source code.
+•	Test: Executes tests to validate code correctness
+•	Package: Packages the compiled code into a distributed formats like 
+                    JAR, WAR and other formats
+•	Verify: Performs additional checks, typically for integration testing.
+•
+
+
+
+	Install: Installs the package to the local Maven repository.
+•	Deploy: Deploys the package to a remote repository for use by other projects.
+
+Creating maven project from command line :
+
+C:\.\..\MyWorkspace>mvn archetype:generate -DgroupId=com.mycom -DartifactId=maven-hello-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+------------
+
+Generating a Web Project - Ready
+Maven Build Profiles - Ready 
+Working with Build Profiles - Ready
+-------------------
+Running Tests & Generating Reports - Ready
+Overview of Testing - Ready
+Adding Test-scoped Dependencies - available in POM.xml - Ready
+Running Tests - Ready
+Using the Site Lifecycle - Ready
+Customized Site Configuration - Ready
+Using the Javadoc Plugin
+---------------------------------
+
+
+
+
+
+
+<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-javadoc-plugin -->
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-javadoc-plugin</artifactId>
+    <version>3.3.1</version>
+</dependency>
+
+Integrating Maven with Eclipse
+
+Unbound and Bound wild cards in java generics :
+-----------------------
+
+Upper bound wildcard − If a variable is of in category, use extends keyword with wildcard.
+
+Lower bound wildcard − If a variable is of out category, use super keyword with wildcard.
+
+Unbounded wildcard − If a variable can be accessed using Object class method then use an unbound wildcard.
+Single <?> is called an unbounded wildcard in generic and it can represent 
+any type, similar to Object in Java. 
+For example, List<?> can represent any List e.g. List<String> or List<Integer>
+ it provides the highest level of flexibility on passing method argument.
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+Interface can have one static and one default methods
+
+	 If a new method is to be added in an interface, then its implementation code
+	 has to be provided in the class implementing the same interface.
+	 Java 8 supports one default and one static method in interface.
+	 
+	 interface IShape { 
+		// abstract method 
+		public void square(int a); 
+	  
+		// default method 
+		default void show() { 
+		  System.out.println("Default Method Executed"); 
+		} 
+		  // static method 
+		static void show() { 
+			System.out.println("Static Method Executed"); 
+		} 
+	}
+-----------
+MM , DD - zero padding - 01, 09 etc
+-----------
+Given code snippet:
+
+	public class InputOutput    {
+        public static void main(String args[]) throws IOException        {  
+            char c;
+            BufferedReader obj = new BufferedReader(
+									new InputStreamReader(System.in));
+            do
+            {
+                c = (char) obj.read();
+				System.out.print(c);
+            } while(c != 'q');
+        }
+    }
+	
+	------------------
+What is the output of this program if input given is ‘abcqfghqbcd’?
+    class Input_Output 
+    {
+        public static void main(String args[]) throws IOException
+        {  
+            string str;
+            BufferedReader obj = new BufferedReader(new InputStreamReader(System.in));
+            do
+            {
+                str = (char) obj.readLine();
+         System.out.print(str);
+            } while(!str.equals("strong"));
+        }
+    }
+	
+	LinkeList class methods  - addFirst(), addLast(), removeFirst(), removeLast(),
+								  getLast(), getFirst()
+								  
+
+
+
+
+
